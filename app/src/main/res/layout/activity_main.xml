@@ -10,7 +10,7 @@
 
     >
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarID"
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
@@ -19,7 +19,7 @@
 
 
 
-    </android.support.v7.widget.Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 
 
     <RelativeLayout
@@ -32,7 +32,7 @@
         android:paddingRight="2dp">
 
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/logoCardViewID"
             android:layout_width="match_parent"
             android:layout_height="168dp"
@@ -81,7 +81,7 @@
             </RelativeLayout>
 
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
     </RelativeLayout>
 
@@ -99,7 +99,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1">
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/noticeID"
                 android:layout_width="match_parent"
                 android:layout_height="168dp"
@@ -136,7 +136,7 @@
 
                 </RelativeLayout>
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
         </RelativeLayout>
 
@@ -145,7 +145,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1">
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/pepoleID"
                 android:layout_width="match_parent"
                 android:layout_height="168dp"
@@ -183,7 +183,7 @@
 
                 </RelativeLayout>
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
         </RelativeLayout>
 
@@ -197,7 +197,7 @@
         android:layout_below="@id/p2ID">
 
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/aboutID"
             android:layout_width="match_parent"
             android:layout_height="168dp"
@@ -236,7 +236,7 @@
             </RelativeLayout>
 
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
     </RelativeLayout>
 

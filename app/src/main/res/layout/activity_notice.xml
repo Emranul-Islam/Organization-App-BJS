@@ -8,14 +8,14 @@
     android:orientation="vertical"
     tools:context=".NoticeActivity">
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/NoticeToolbarID"
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
         android:background="@color/colorCard"
         app:titleTextColor="@android:color/black">
 
-    </android.support.v7.widget.Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 
 
 
