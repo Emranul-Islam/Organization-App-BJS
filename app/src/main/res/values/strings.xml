@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">বিটেশ্বর যুব সমাজ</string>
+    <string name="notice">নোটিশ</string>
+    <string name="pepole">সদস্য</string>
+    <string name="aboutUs">আমাদের সম্পর্কে বিস্তারিত..</string>
+    <string name="title">বিটেশ্বর যুব সমাজ</string>
+    <string name="title2">আমার নাম সোহাগ</string>
+    <string name="slogan">ইসলামের পথে,\n অসহায় এর পাশে।</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="aboutBijus">রটা যায় রিয়া বলে রাফিন যেনো চিন্তা না করে বাসায় চলে যায়। রাফিন কি আর সেই কথা শুনে। এক ফাকে রিয়ার মা কোথায় যেনো যায় রিয়ার বান্ধবীকে রেখে সেই সুযোগেই রাফিন ঢুকে রিয়াকে যেখানে রাখা হয়। রাফিন এর চোখ ছিলো ভেজা মনে হচ্ছিলো অনেক কেঁদেছে সে। রিয়ার কাছে গিয়েই রাফিন কাদো কাদো গলায় বললো কিচ্ছু হবে না তোমার এই যে আমি চলে এসেছি আমি আমি আছি তোমার পাশে । রাফিন প্রায় আধ ঘন্টা ধরে রিয়ার হাত ধরে বসে ছিলো। প্রায় চার দিন রিয়া হাঁসপাতালে ছিলো রাফিন প্রতিদিন গিয়ে দূরে বসে থাকতো আর সুযোগ পেলেই কাছে যেতো।
+</string>
+
+    <string-array name="pepolesName">
+        <item>মোহাম্মাদ সোহাগ</item>
+        <item>Muhammad Sumon</item>
+        <item>Naeim Hossain</item>
+        <item>Lamia Akter</item>
+        <item>Sumiya Akter</item>
+
+    </string-array>
+    <string-array name="phoneNumber">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+</resources>
+

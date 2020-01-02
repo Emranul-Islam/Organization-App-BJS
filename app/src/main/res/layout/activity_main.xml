@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarID"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorToolbar"
+        app:title="@string/title">
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:id="@+id/p1ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarID"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="2dp">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/logoCardViewID"
+            android:layout_width="match_parent"
+            android:layout_height="168dp"
+            android:layout_margin="10dp"
+            android:elevation="12dp"
+            app:cardBackgroundColor="@color/colorCard3"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/mainLogoID"
+                    android:layout_width="140dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/MainTextID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/mainLogoID"
+                    android:paddingTop="28sp"
+                    android:text="@string/title"
+                    android:textColor="@android:color/black"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/MainTextID"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/mainLogoID"
+                    android:text="@string/slogan"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp"
+                    android:theme="@style/Animation.AppCompat.DropDownUp" />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/p2ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p1ID"
+        android:layout_marginTop="0dp"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/noticeID"
+                android:layout_width="match_parent"
+                android:layout_height="168dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/colorAccent"
+                android:clickable="true"
+                android:elevation="8dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/colorCard"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/middelLogo1ID"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:padding="15dp"
+                        android:src="@drawable/notice_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/middelLogo1ID"
+                        android:layout_marginLeft="18dp"
+                        android:text="@string/notice"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/pepoleID"
+                android:layout_width="match_parent"
+                android:layout_height="168dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorAccent"
+                android:clickable="true"
+                android:elevation="8dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/colorCard2"
+
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/middelLogo2ID"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:padding="15dp"
+                        android:src="@drawable/pepole_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/middelLogo2ID"
+                        android:layout_marginLeft="28dp"
+                        android:text="@string/pepole"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/p3ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/p2ID">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/aboutID"
+            android:layout_width="match_parent"
+            android:layout_height="168dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:elevation="12dp"
+            android:foreground="?android:selectableItemBackgroundBorderless"
+            app:cardBackgroundColor="@color/colorCard4"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/aboutLogoID"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+
+                    android:src="@drawable/about_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/aboutLogoID"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/aboutUs"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
