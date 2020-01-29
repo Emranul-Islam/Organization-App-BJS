@@ -26,6 +26,13 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 
+    configurations.matching { it.name == '_internal_aapt2_binary' }.all { config ->
+        config.resolutionStrategy.eachDependency { details ->
+            details.useVersion("3.3.2-5309881")
+        }
+    }
+
+
     //------------Extra Dependencies---------------//
     implementation 'androidx.recyclerview:recyclerview:1.2.0-alpha01'
     implementation 'de.hdodenhof:circleimageview:3.0.0'

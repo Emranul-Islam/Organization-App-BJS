@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.matrichaya.bijos">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.muhammad_sohag.biteshwor_jobo_somaj">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+
 
     <application
         android:allowBackup="true"
@@ -10,18 +12,17 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Admin"></activity>
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.muhammad_sohag.biteshwor_jobo_somaj.People" />
+        <activity android:name="com.muhammad_sohag.biteshwor_jobo_somaj.Admin" />
         <activity
-            android:name=".NoticeActivity"
-            android:parentActivityName=".MainActivity"></activity>
+            android:name="com.muhammad_sohag.biteshwor_jobo_somaj.NoticeActivity"
+            android:parentActivityName="com.muhammad_sohag.biteshwor_jobo_somaj.MainActivity" />
         <activity
-            android:name=".AboutActivity"
-            android:parentActivityName=".MainActivity"></activity>
-        <activity
-            android:name=".Pepole"
-            android:parentActivityName=".MainActivity"></activity>
-        <activity android:name=".MainActivity">
+            android:name="com.muhammad_sohag.biteshwor_jobo_somaj.AboutActivity"
+            android:parentActivityName="com.muhammad_sohag.biteshwor_jobo_somaj.MainActivity" />
+        <activity android:name="com.muhammad_sohag.biteshwor_jobo_somaj.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

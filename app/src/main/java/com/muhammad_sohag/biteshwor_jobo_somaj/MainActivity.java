@@ -1,4 +1,4 @@
-package com.matrichaya.bijos;
+package com.muhammad_sohag.biteshwor_jobo_somaj;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,7 +11,6 @@ import androidx.cardview.widget.CardView;
 public class MainActivity extends AppCompatActivity {
 
     private CardView cardViewNotice, cardViewPepole, cardViewAbout,mainCardView;
-    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initToolbar(){
-        toolbar=findViewById(R.id.pepoleToolbarID);
+        Toolbar toolbar = findViewById(R.id.toolbarID);
         setSupportActionBar(toolbar);
     }
 
@@ -45,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //CardView Pepole intent
+        //CardView People intent
 
 
 
@@ -53,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this, Pepole.class);
+                Intent intent = new Intent(MainActivity.this, People.class);
                 startActivity(intent);
             }
         });

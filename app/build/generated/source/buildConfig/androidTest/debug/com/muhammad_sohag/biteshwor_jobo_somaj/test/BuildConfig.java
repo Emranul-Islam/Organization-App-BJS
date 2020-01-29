@@ -1,11 +1,11 @@
 /**
  * Automatically generated file. DO NOT MODIFY
  */
-package com.matrichaya.bijos;
+package com.muhammad_sohag.biteshwor_jobo_somaj.test;
 
 public final class BuildConfig {
   public static final boolean DEBUG = Boolean.parseBoolean("true");
-  public static final String APPLICATION_ID = "com.matrichaya.bijos";
+  public static final String APPLICATION_ID = "com.matrichaya.bijos.test";
   public static final String BUILD_TYPE = "debug";
   public static final String FLAVOR = "";
   public static final int VERSION_CODE = 1;
