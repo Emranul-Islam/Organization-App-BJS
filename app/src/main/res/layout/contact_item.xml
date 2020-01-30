@@ -2,7 +2,6 @@
     android:layout_width="match_parent"
     android:layout_height="90dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/colorWhite"
     app:cardCornerRadius="2dp"
     android:layout_marginStart="3dp"
     android:layout_marginEnd="3dp"
@@ -10,19 +9,21 @@
     android:layout_marginRight="3dp"
     app:cardElevation="1dp"
     android:layout_marginTop="5dp"
-    >
+    android:clickable="true"
+    android:focusable="true">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="90dp"
-        android:background="@color/colorWhite"
-        >
+        android:clickable="true"
+        android:background="@drawable/color_item_card"
+        android:focusable="true">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/people_image_view"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:src="@drawable/tt1"
+            android:src="@drawable/ic_launcher_background"
             android:layout_margin="5dp"
             android:layout_centerVertical="true"
             />
@@ -41,12 +42,13 @@
 
         <ImageView
             android:id="@+id/people_call_btn"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginEnd="5dp"
-            android:padding="10dp"
+            android:padding="20dp"
 
             android:src="@drawable/call_icon" />
 

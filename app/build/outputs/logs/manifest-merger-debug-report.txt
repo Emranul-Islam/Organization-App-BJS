@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:2:1-32:12
+ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:2:1-34:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Muhammad Sohag\.gradle\caches\transforms-2\files-2.1\6119d746697059b7e1b74aab4d181f56\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Muhammad Sohag\.gradle\caches\transforms-2\files-2.1\3ec6fa8458ddbe732478393a9f9e6c77\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.recyclerview:recyclerview:1.2.0-alpha01] C:\Users\Muhammad Sohag\.gradle\caches\transforms-2\files-2.1\c4161f9072ca02d672bf5648ae89761e\recyclerview-1.2.0-alpha01\AndroidManifest.xml:17:1-24:12
@@ -28,29 +28,31 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Muhammad Sohag\.
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Muhammad Sohag\.gradle\caches\transforms-2\files-2.1\63647da4654da12a6f2785cfbbad8123\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Muhammad Sohag\.gradle\caches\transforms-2\files-2.1\733fc1d306cee2c05d3e1fb0b7527020\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Muhammad Sohag\.gradle\caches\transforms-2\files-2.1\fdd65d8b6066fd289a68b42931dc03a2\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:2:1-34:12
 	package
-		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:3:5-35
+		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:4:5-54
 		INJECTED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml
 		INJECTED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml
-		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:2:1-32:12
+		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:2:1-34:12
 		INJECTED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml
-		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:2:1-32:12
+		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:2:1-34:12
 		INJECTED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.CALL_PHONE
-ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:5:5-69
+ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:6:5-69
 	android:name
-		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:5:22-66
+		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:6:22-66
 application
-ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:8:5-30:19
+ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:8:5-32:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Muhammad Sohag\.gradle\caches\transforms-2\files-2.1\3ec6fa8458ddbe732478393a9f9e6c77\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Muhammad Sohag\.gradle\caches\transforms-2\files-2.1\3ec6fa8458ddbe732478393a9f9e6c77\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\Muhammad Sohag\.gradle\caches\transforms-2\files-2.1\4fa83cb0bd406a3852b604bdf148e769\circleimageview-3.0.0\AndroidManifest.xml:9:5-20
@@ -65,6 +67,8 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Mu
 		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:13:9-35
 	android:label
 		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:11:9-41
+	tools:ignore
+		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:15:9-48
 	android:roundIcon
 		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:12:9-43
 	android:icon
@@ -73,40 +77,44 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Mu
 		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
 		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:14:9-40
-activity#com.matrichaya.bijos.People
-ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:15:9-53
+activity#com.muhammad_sohag.biteshwor_jobo_somaj.ChadaActivity
+ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:16:9-60
 	android:name
-		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:15:19-41
-activity#com.matrichaya.bijos.Admin
-ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:16:9-43
+		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:16:19-48
+activity#com.muhammad_sohag.biteshwor_jobo_somaj.People
+ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:17:9-44
 	android:name
-		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:16:19-40
-activity#com.matrichaya.bijos.NoticeActivity
-ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:17:9-19:58
+		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:17:19-41
+activity#com.muhammad_sohag.biteshwor_jobo_somaj.Admin
+ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:18:9-43
+	android:name
+		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:18:19-40
+activity#com.muhammad_sohag.biteshwor_jobo_somaj.NoticeActivity
+ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:19:9-21:58
 	android:parentActivityName
-		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:19:13-55
+		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:21:13-55
 	android:name
-		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:18:13-43
-activity#com.matrichaya.bijos.AboutActivity
-ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:20:9-22:58
+		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:20:13-43
+activity#com.muhammad_sohag.biteshwor_jobo_somaj.AboutActivity
+ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:22:9-24:58
 	android:parentActivityName
-		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:22:13-55
+		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:24:13-55
 	android:name
-		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:21:13-42
-activity#com.matrichaya.bijos.MainActivity
-ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:23:9-29:20
+		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:23:13-42
+activity#com.muhammad_sohag.biteshwor_jobo_somaj.MainActivity
+ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:25:9-31:20
 	android:name
-		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:23:19-47
+		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:25:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:24:13-28:29
+ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:26:13-30:29
 action#android.intent.action.MAIN
-ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:25:17-69
+ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:27:17-69
 	android:name
-		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:25:25-66
+		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:27:25-66
 category#android.intent.category.LAUNCHER
-ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:27:17-77
+ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:29:17-77
 	android:name
-		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:27:27-74
+		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:29:27-74
 uses-sdk
 INJECTED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml

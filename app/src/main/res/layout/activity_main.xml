@@ -97,6 +97,7 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:id="@+id/noticeLayout"
             android:layout_weight="1">
 
             <androidx.cardview.widget.CardView
@@ -143,6 +144,7 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:id="@+id/people_layout"
             android:layout_weight="1">
 
             <androidx.cardview.widget.CardView
@@ -151,10 +153,9 @@
                 android:layout_height="168dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="10dp"
-                android:background="@color/colorAccent"
                 android:clickable="true"
                 android:elevation="8dp"
-                android:foreground="?android:attr/selectableItemBackground"
+                android:foreground="?attr/selectableItemBackground"
                 app:cardBackgroundColor="@color/colorCard2"
 
                 app:cardCornerRadius="8dp">

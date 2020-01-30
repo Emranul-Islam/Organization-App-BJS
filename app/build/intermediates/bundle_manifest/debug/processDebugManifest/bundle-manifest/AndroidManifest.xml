@@ -20,15 +20,16 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.matrichaya.bijos.People" />
-        <activity android:name="com.matrichaya.bijos.Admin" />
+        <activity android:name="com.muhammad_sohag.biteshwor_jobo_somaj.ChadaActivity" />
+        <activity android:name="com.muhammad_sohag.biteshwor_jobo_somaj.People" />
+        <activity android:name="com.muhammad_sohag.biteshwor_jobo_somaj.Admin" />
         <activity
-            android:name="com.matrichaya.bijos.NoticeActivity"
-            android:parentActivityName="com.matrichaya.bijos.MainActivity" />
+            android:name="com.muhammad_sohag.biteshwor_jobo_somaj.NoticeActivity"
+            android:parentActivityName="com.muhammad_sohag.biteshwor_jobo_somaj.MainActivity" />
         <activity
-            android:name="com.matrichaya.bijos.AboutActivity"
-            android:parentActivityName="com.matrichaya.bijos.MainActivity" />
-        <activity android:name="com.matrichaya.bijos.MainActivity" >
+            android:name="com.muhammad_sohag.biteshwor_jobo_somaj.AboutActivity"
+            android:parentActivityName="com.muhammad_sohag.biteshwor_jobo_somaj.MainActivity" />
+        <activity android:name="com.muhammad_sohag.biteshwor_jobo_somaj.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -6,45 +6,39 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.ScaleAnimation;
-import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class PeopleAdapter extends RecyclerView.Adapter<PeopleAdapter.ViewHolder> {
-    private Context context;
-    private String[] names,numbers;
-    int lastPosition =0;
+import java.util.ArrayList;
+import java.util.List;
 
-    public PeopleAdapter(Context context, String[] names,String[] numbers) {
+public class ChadaAdapter extends RecyclerView.Adapter<ChadaAdapter.ViewHolder> {
+    private Context context;
+    private List<ChadaModel> chadaModelList;
+    int lastPosition=0;
+
+    public ChadaAdapter(Context context, List<ChadaModel> chadaModelList) {
         this.context = context;
-        this.names = names;
-        this.numbers = numbers;
+        this.chadaModelList = chadaModelList;
     }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.contact_item,viewGroup,false);
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(context).inflate(R.layout.chada_item,parent,false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
-
-        holder.names.setText(names[position]);
-        holder.callBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(context, "This is number: "+numbers[position], Toast.LENGTH_SHORT).show();
-            }
-        });
-
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        holder.chadaItemName.setText(chadaModelList.get(position).getChadaName());
+        holder.chadaItemTime.setText(chadaModelList.get(position).getChadaTime());
         setAnim(holder.itemView,position);
-
     }
+
+    //Simple Animation
     public void setAnim(View view,int position){
         if (position>lastPosition){
             ScaleAnimation animation = new ScaleAnimation(0.0f,1.0f,0.0f,1.0f, Animation.RELATIVE_TO_SELF,0.5f,
@@ -57,19 +51,16 @@ public class PeopleAdapter extends RecyclerView.Adapter<PeopleAdapter.ViewHolder
 
     @Override
     public int getItemCount() {
-        return names.length;
+        return chadaModelList.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-
-        TextView names;
-        ImageView callBtn;
-
-
+        private TextView chadaItemName;
+        private TextView chadaItemTime;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            names = itemView.findViewById(R.id.people_text_view);
-            callBtn = itemView.findViewById(R.id.people_call_btn);
+            chadaItemName = itemView.findViewById(R.id.chada_item_name);
+            chadaItemTime = itemView.findViewById(R.id.chada_item_time);
         }
     }
 }

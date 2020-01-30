@@ -3,6 +3,9 @@ package com.muhammad_sohag.biteshwor_jobo_somaj;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.RelativeLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -10,7 +13,8 @@ import androidx.cardview.widget.CardView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private CardView cardViewNotice, cardViewPepole, cardViewAbout,mainCardView;
+    private CardView cardViewNotice, cardViewPepole, cardViewAbout, mainCardView;
+    RelativeLayout noticeLayout,peopleLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,10 +24,23 @@ public class MainActivity extends AppCompatActivity {
         initToolbar();
         cardIntent();
 
+        anim();
 
     }
 
-    private void initToolbar(){
+    private void anim() {
+        noticeLayout = findViewById(R.id.noticeLayout);
+        peopleLayout = findViewById(R.id.people_layout);
+
+        Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.slide_left_to_right);
+        noticeLayout.startAnimation(animation);
+
+        animation =AnimationUtils.loadAnimation(this,R.anim.slide_right_to_left);
+        peopleLayout.startAnimation(animation);
+
+    }
+
+    private void initToolbar() {
         Toolbar toolbar = findViewById(R.id.toolbarID);
         setSupportActionBar(toolbar);
     }
@@ -39,13 +56,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this,Admin.class);
+                Intent intent = new Intent(MainActivity.this, ChadaActivity.class);
                 startActivity(intent);
             }
         });
 
         //CardView People intent
-
 
 
         cardViewPepole.setOnClickListener(new View.OnClickListener() {
@@ -61,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         cardViewAbout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent  intent =new Intent(MainActivity.this,AboutActivity.class);
+                Intent intent = new Intent(MainActivity.this, AboutActivity.class);
                 startActivity(intent);
 
             }
@@ -71,10 +87,12 @@ public class MainActivity extends AppCompatActivity {
         cardViewNotice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,NoticeActivity.class);
+                Intent intent = new Intent(MainActivity.this, NoticeActivity.class);
                 startActivity(intent);
             }
         });
+
+
     }
 
 }

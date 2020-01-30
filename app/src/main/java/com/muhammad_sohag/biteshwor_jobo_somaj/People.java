@@ -11,7 +11,6 @@ public class People extends AppCompatActivity {
 
     private String[] names;
     private String[] numbers;
-    private RecyclerView peopleRecyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +24,11 @@ public class People extends AppCompatActivity {
         names =getResources().getStringArray(R.array.peoplesName);
         numbers = getResources().getStringArray(R.array.phoneNumber);
 
-        peopleRecyclerView = findViewById(R.id.people_recycler_view);
+       addRecycler();
+    }
+
+    private void addRecycler(){
+        RecyclerView peopleRecyclerView = findViewById(R.id.people_recycler_view);
         peopleRecyclerView.setLayoutManager(new LinearLayoutManager(People.this));
         PeopleAdapter peopleAdapter = new PeopleAdapter(People.this,names,numbers);
         peopleRecyclerView.setAdapter(peopleAdapter);
