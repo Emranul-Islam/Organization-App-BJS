@@ -7,6 +7,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class People extends AppCompatActivity {
 
     private String[] names;
@@ -30,8 +33,23 @@ public class People extends AppCompatActivity {
     private void addRecycler(){
         RecyclerView peopleRecyclerView = findViewById(R.id.people_recycler_view);
         peopleRecyclerView.setLayoutManager(new LinearLayoutManager(People.this));
-        PeopleAdapter peopleAdapter = new PeopleAdapter(People.this,names,numbers);
+        List<PeopleModel> modelList = new ArrayList<>();
+        modelList.add(new PeopleModel("Photo","Name","phone number","UserID"));
+        modelList.add(new PeopleModel("Photo","Name","phone number","UserID"));
+        modelList.add(new PeopleModel("Photo","Name","phone number","UserID"));
+        modelList.add(new PeopleModel("Photo","Name","phone number","UserID"));
+        modelList.add(new PeopleModel("Photo","Name","phone number","UserID"));
+        modelList.add(new PeopleModel("Photo","Name","phone number","UserID"));
+        modelList.add(new PeopleModel("Photo","Name","phone number","UserID"));
+        modelList.add(new PeopleModel("Photo","Name","phone number","UserID"));
+        modelList.add(new PeopleModel("Photo","Name","phone number","UserID"));
+        modelList.add(new PeopleModel("Photo","Name","phone number","UserID"));
+        modelList.add(new PeopleModel("Photo","Name","phone number","UserID"));
+        modelList.add(new PeopleModel("Photo","Name","phone number","UserID"));
+        modelList.add(new PeopleModel("Photo","Name","phone number","UserID"));
+        PeopleAdapter peopleAdapter = new PeopleAdapter(People.this,modelList);
         peopleRecyclerView.setAdapter(peopleAdapter);
+        peopleAdapter.notifyDataSetChanged();
 
     }
 }
