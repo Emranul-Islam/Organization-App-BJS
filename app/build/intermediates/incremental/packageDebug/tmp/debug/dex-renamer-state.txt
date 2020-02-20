@@ -1,7 +1,10 @@
-#Thu Jan 30 00:12:44 BDT 2020
-base.0=E\:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+#Fri Feb 21 01:22:03 BDT 2020
+path.2=classes2.dex
 path.1=classes.dex
-renamed.1=classes2.dex
 path.0=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
 renamed.0=classes.dex
+base.2=E\:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes2.dex
 base.1=E\:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
+base.0=E\:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex

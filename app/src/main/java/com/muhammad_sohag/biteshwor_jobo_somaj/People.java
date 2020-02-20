@@ -1,55 +1,71 @@
 package com.muhammad_sohag.biteshwor_jobo_somaj;
 
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Bundle;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.annotation.Nullable;
+
 public class People extends AppCompatActivity {
 
-    private String[] names;
-    private String[] numbers;
+    private FirebaseFirestore database = FirebaseFirestore.getInstance();
+    private CollectionReference databaseRaf = database.collection("Sodesso_List");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_people);
-
         Toolbar toolbar = findViewById(R.id.people_toolBar);
         setSupportActionBar(toolbar);
         setTitle("People");
 
-        names =getResources().getStringArray(R.array.peoplesName);
-        numbers = getResources().getStringArray(R.array.phoneNumber);
-
-       addRecycler();
+        addRecycler();
     }
 
-    private void addRecycler(){
+    private void addRecycler() {
         RecyclerView peopleRecyclerView = findViewById(R.id.people_recycler_view);
         peopleRecyclerView.setLayoutManager(new LinearLayoutManager(People.this));
-        List<PeopleModel> modelList = new ArrayList<>();
-        modelList.add(new PeopleModel("Photo","Name","phone number","UserID"));
-        modelList.add(new PeopleModel("Photo","Name","phone number","UserID"));
-        modelList.add(new PeopleModel("Photo","Name","phone number","UserID"));
-        modelList.add(new PeopleModel("Photo","Name","phone number","UserID"));
-        modelList.add(new PeopleModel("Photo","Name","phone number","UserID"));
-        modelList.add(new PeopleModel("Photo","Name","phone number","UserID"));
-        modelList.add(new PeopleModel("Photo","Name","phone number","UserID"));
-        modelList.add(new PeopleModel("Photo","Name","phone number","UserID"));
-        modelList.add(new PeopleModel("Photo","Name","phone number","UserID"));
-        modelList.add(new PeopleModel("Photo","Name","phone number","UserID"));
-        modelList.add(new PeopleModel("Photo","Name","phone number","UserID"));
-        modelList.add(new PeopleModel("Photo","Name","phone number","UserID"));
-        modelList.add(new PeopleModel("Photo","Name","phone number","UserID"));
-        PeopleAdapter peopleAdapter = new PeopleAdapter(People.this,modelList);
+        final List<PeopleModel> modelList = new ArrayList<>();
+        modelList.add(new PeopleModel("Photo", "Name", "phone number", "UserID"));
+
+        final PeopleAdapter peopleAdapter = new PeopleAdapter(People.this, modelList);
         peopleRecyclerView.setAdapter(peopleAdapter);
-        peopleAdapter.notifyDataSetChanged();
+
+        databaseRaf.orderBy("INDEX").addSnapshotListener(People.this, new EventListener<QuerySnapshot>() {
+            @Override
+            public void onEvent(@Nullable QuerySnapshot queryDocumentSnapshots, @Nullable FirebaseFirestoreException e) {
+                if (e != null){
+                    Toast.makeText(People.this, "Somthing is Wronng", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if (queryDocumentSnapshots != null) {
+                    for (QueryDocumentSnapshot documentSnapshot: queryDocumentSnapshots){
+                        modelList.add(new PeopleModel(documentSnapshot.getString("URL"),documentSnapshot.getString("NAMES"),
+                                documentSnapshot.getString("NUMBER"),documentSnapshot.getString("ID")));
+                    }
+                    peopleAdapter.notifyDataSetChanged();
+
+                }
+            }
+        });
+
 
     }
 }
