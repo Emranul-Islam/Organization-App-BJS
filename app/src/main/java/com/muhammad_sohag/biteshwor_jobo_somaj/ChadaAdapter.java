@@ -33,8 +33,7 @@ public class ChadaAdapter extends RecyclerView.Adapter<ChadaAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.chadaItemName.setText(chadaModelList.get(position).getChadaName());
-        holder.chadaItemTime.setText(chadaModelList.get(position).getChadaTime());
+
         setAnim(holder.itemView,position);
     }
 
@@ -55,12 +54,14 @@ public class ChadaAdapter extends RecyclerView.Adapter<ChadaAdapter.ViewHolder> 
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-        private TextView chadaItemName;
-        private TextView chadaItemTime;
+        private TextView chada_kromik_no;
+        private TextView chada_time;
+        private TextView chada_grahok;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            chadaItemName = itemView.findViewById(R.id.chada_item_name);
-            chadaItemTime = itemView.findViewById(R.id.chada_item_time);
+            chada_kromik_no = itemView.findViewById(R.id.kromik_no);
+            chada_time = itemView.findViewById(R.id.date);
+            chada_grahok = itemView.findViewById(R.id.grahok_name);
         }
     }
 }

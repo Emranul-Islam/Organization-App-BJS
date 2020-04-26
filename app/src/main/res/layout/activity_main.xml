@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorGray"
     android:orientation="vertical"
+    android:weightSum="3"
     tools:context=".MainActivity"
 
     >
@@ -18,15 +19,13 @@
         app:title="@string/title">
 
 
-
     </androidx.appcompat.widget.Toolbar>
 
-
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/p1ID"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/toolbarID"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:paddingLeft="2dp"
         android:paddingTop="2dp"
         android:paddingRight="2dp">
@@ -35,7 +34,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/logoCardViewID"
             android:layout_width="match_parent"
-            android:layout_height="168dp"
+            android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:elevation="12dp"
             app:cardBackgroundColor="@color/colorCard3"
@@ -50,7 +49,7 @@
                     android:id="@+id/mainLogoID"
                     android:layout_width="140dp"
                     android:layout_height="150dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
                     android:src="@drawable/logo" />
 
@@ -58,7 +57,7 @@
                     android:id="@+id/MainTextID"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@+id/mainLogoID"
+                    android:layout_toEndOf="@+id/mainLogoID"
                     android:paddingTop="28sp"
                     android:text="@string/title"
                     android:textColor="@android:color/black"
@@ -70,7 +69,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/MainTextID"
                     android:layout_margin="10dp"
-                    android:layout_toRightOf="@+id/mainLogoID"
+                    android:layout_toEndOf="@+id/mainLogoID"
                     android:text="@string/slogan"
                     android:textAlignment="center"
                     android:textColor="@color/colorAccent"
@@ -83,110 +82,104 @@
 
         </androidx.cardview.widget.CardView>
 
-    </RelativeLayout>
+    </LinearLayout>
 
 
     <LinearLayout
         android:id="@+id/p2ID"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/p1ID"
+        android:layout_height="0dp"
         android:layout_marginTop="0dp"
+        android:layout_weight="1"
         android:weightSum="2">
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/noticeID"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/noticeLayout"
-            android:layout_weight="1">
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/colorAccent"
+            android:elevation="8dp"
+            android:layout_weight="1"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/colorCard"
+            app:cardCornerRadius="8dp"
+            tools:ignore="NestedWeights">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/noticeID"
+            <RelativeLayout
+                android:id="@+id/noticeLayout"
                 android:layout_width="match_parent"
-                android:layout_height="168dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="5dp"
-                android:background="@color/colorAccent"
-                android:clickable="true"
-                android:elevation="8dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                app:cardBackgroundColor="@color/colorCard"
-                app:cardCornerRadius="8dp">
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp">
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
+                <ImageView
+                    android:id="@+id/middelLogo1ID"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:padding="15dp"
+                    android:src="@drawable/notice_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:padding="10dp">
+                    android:layout_below="@id/middelLogo1ID"
+                    android:layout_marginStart="18dp"
+                    android:text="@string/notice"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
 
-                    <ImageView
-                        android:id="@+id/middelLogo1ID"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:padding="15dp"
-                        android:src="@drawable/notice_icon" />
+            </RelativeLayout>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/middelLogo1ID"
-                        android:layout_marginLeft="18dp"
-                        android:text="@string/notice"
-                        android:textColor="@android:color/black"
-                        android:textSize="20sp" />
+        </androidx.cardview.widget.CardView>
 
-                </RelativeLayout>
 
-            </androidx.cardview.widget.CardView>
 
-        </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pepoleID"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/people_layout"
-            android:layout_weight="1">
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/colorAccent"
+            android:elevation="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/colorCard2"
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/pepoleID"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:id="@+id/people_layout"
                 android:layout_width="match_parent"
-                android:layout_height="168dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="10dp"
-                android:clickable="true"
-                android:elevation="8dp"
-                android:foreground="?attr/selectableItemBackground"
-                app:cardBackgroundColor="@color/colorCard2"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp">
 
-                app:cardCornerRadius="8dp">
+                <ImageView
+                    android:id="@+id/middelLogo2ID"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:padding="15dp"
+                    android:src="@drawable/pepole_icon" />
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:padding="10dp">
+                    android:layout_below="@id/middelLogo2ID"
+                    android:layout_marginStart="28dp"
+                    android:text="@string/pepole"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
 
-                    <ImageView
-                        android:id="@+id/middelLogo2ID"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:padding="15dp"
-                        android:src="@drawable/pepole_icon" />
+            </RelativeLayout>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/middelLogo2ID"
-                        android:layout_marginLeft="28dp"
-                        android:text="@string/pepole"
-                        android:textColor="@android:color/black"
-                        android:textSize="20sp" />
+        </androidx.cardview.widget.CardView>
 
-                </RelativeLayout>
 
-            </androidx.cardview.widget.CardView>
-
-        </RelativeLayout>
 
     </LinearLayout>
 
@@ -194,16 +187,15 @@
     <RelativeLayout
         android:id="@+id/p3ID"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/p2ID">
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/aboutID"
+            android:id="@+id/user"
             android:layout_width="match_parent"
-            android:layout_height="168dp"
+            android:layout_height="match_parent"
             android:layout_margin="10dp"
-            android:clickable="true"
             android:elevation="12dp"
             android:foreground="?android:selectableItemBackgroundBorderless"
             app:cardBackgroundColor="@color/colorCard4"
@@ -215,24 +207,31 @@
                 android:layout_margin="10dp"
                 android:padding="10dp">
 
-                <ImageView
-                    android:id="@+id/aboutLogoID"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginLeft="10dp"
-
-                    android:src="@drawable/about_icon" />
-
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/aboutLogoID"
-                    android:layout_centerHorizontal="true"
-                    android:text="@string/aboutUs"
-                    android:textColor="@color/colorGray"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/user_image"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/about_icon" />
+
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/aboutUs"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/colorGray"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
 
             </RelativeLayout>
 
@@ -242,4 +241,4 @@
     </RelativeLayout>
 
 
-</RelativeLayout>
+</LinearLayout>

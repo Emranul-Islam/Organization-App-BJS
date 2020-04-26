@@ -3,37 +3,81 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
-    android:layout_margin="10dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardView"
+    android:layout_margin="5dp"
     app:cardCornerRadius="10dp"
     app:cardElevation="3dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_margin="5dp"
         android:background="@color/colorWhite">
 
         <TextView
-            android:fontFamily="@font/hacked"
+            android:id="@+id/_a"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:layout_margin="20dp"
-            android:text="আমার: Hacked"
-            android:textSize="30sp"
-            android:textColor="@color/bgColor"
-            android:id="@+id/chada_item_name"/>
+            android:text="ক্রমিক নং:"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_margin="5dp"/>
+
         <TextView
-            android:fontFamily="@font/shonar"
-            android:textAlignment="center"
-            android:layout_below="@+id/chada_item_name"
+            android:id="@+id/kromik_no"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:text="আমার সময়: Somoy "
-            android:textSize="30sp"
-            android:textColor="@color/bgColor"
-            android:id="@+id/chada_item_time"/>
+            android:layout_toEndOf="@id/_a"
+            android:layout_margin="5dp"
+            android:text="   "
+            android:textColor="@color/colorRed"
+            android:textStyle="bold"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/_b"
+            android:layout_below="@id/_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="তারিখ:"
+            android:textSize="28sp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/_b"
+            android:layout_below="@id/kromik_no"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="5dp"
+            android:text="12/12/12"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/_c"
+            android:layout_below="@id/_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="গ্রাহকের নাম:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/grahok_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/_c"
+            android:layout_below="@id/date"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="5dp"
+            android:text="Mohiuddin"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
 
 
     </RelativeLayout>

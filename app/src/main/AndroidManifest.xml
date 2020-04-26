@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.muhammad_sohag.biteshwor_jobo_somaj">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
@@ -14,14 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ChadaActivity"></activity>
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".ChadaActivity" />
         <activity android:name=".People" />
         <activity android:name=".Admin" />
         <activity
             android:name=".NoticeActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".AboutActivity"
+            android:name=".UserActivity"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
