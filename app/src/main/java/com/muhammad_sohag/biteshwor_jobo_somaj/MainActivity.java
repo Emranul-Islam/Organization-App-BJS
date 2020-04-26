@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
 
-    private CardView cardViewNotice, cardViewPepole, userCardView, mainCardView;
+
     private ImageView userImage;
     private TextView userName;
     RelativeLayout noticeLayout, peopleLayout;
@@ -34,11 +34,9 @@ public class MainActivity extends AppCompatActivity {
         userName = findViewById(R.id.user_name);
 
         initToolbar();
-        cardIntent();
 
         anim();
 
-        //todo: ekhane kicho kaj korbo current user er jonno
 
     }
 
@@ -59,57 +57,40 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
-    private void cardIntent() {
-        mainCardView = findViewById(R.id.logoCardViewID);
-        cardViewNotice = findViewById(R.id.noticeID);
-        cardViewPepole = findViewById(R.id.pepoleID);
-        userCardView = findViewById(R.id.user);
 
 
-        mainCardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this, ChadaActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        //CardView People intent
-
-
-        cardViewPepole.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MainActivity.this, People.class);
-                startActivity(intent);
-            }
-        });
-
-        //CardView About intent
-        userCardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (cUser == null) {
-                    Intent intent = new Intent(MainActivity.this, UserActivity.class);
-                    startActivity(intent);
-                }else{
-                    Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-                    startActivity(intent);
-                }            }
-        });
-
-        //CardView Notice intent
-        cardViewNotice.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-                startActivity(intent);
-            }
-        });
-
+    //blood donner click listener:
+    public void bloodDonner(View view) {
 
     }
 
+
+
+    //people click listener:
+    public void people(View view) {
+        Intent intent = new Intent(MainActivity.this, People.class);
+        startActivity(intent);
+    }
+
+
+
+    //user click listener:
+    public void user(View view) {
+
+        if (cUser != null) {
+            Intent intent = new Intent(MainActivity.this, UserActivity.class);
+            startActivity(intent);
+        } else {
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(intent);
+        }
+    }
+
+
+    //about click listener:
+    public void about(View view) {
+        Intent intent = new Intent(MainActivity.this, About.class);
+        startActivity(intent);
+    }
 }

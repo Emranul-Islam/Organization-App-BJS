@@ -26,15 +26,16 @@
         android:id="@+id/login_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="ইমেইল দিন"
-        android:inputType="number" />
+        android:hint="@string/enter_user_name"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/login_pass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="পাসওয়ার্ড দিন"
-        android:inputType="numberPassword" />
+        android:hint="@string/enter_pass"
+        android:inputType="numberPassword"
+         />
 
     <Button
         android:id="@+id/login_btn"

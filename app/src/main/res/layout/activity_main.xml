@@ -32,11 +32,12 @@
 
 
         <androidx.cardview.widget.CardView
+            android:onClick="about"
             android:id="@+id/logoCardViewID"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
-            android:elevation="12dp"
+            app:cardElevation="5dp"
             app:cardBackgroundColor="@color/colorCard3"
             app:cardCornerRadius="8dp">
 
@@ -95,13 +96,13 @@
 
 
         <androidx.cardview.widget.CardView
+            android:onClick="bloodDonner"
             android:id="@+id/noticeID"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="5dp"
-            android:background="@color/colorAccent"
-            android:elevation="8dp"
+            app:cardElevation="5dp"
             android:layout_weight="1"
             android:foreground="?android:attr/selectableItemBackground"
             app:cardBackgroundColor="@color/colorCard"
@@ -120,14 +121,14 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:padding="15dp"
-                    android:src="@drawable/notice_icon" />
+                    android:src="@drawable/blood_ic" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/middelLogo1ID"
                     android:layout_marginStart="18dp"
-                    android:text="@string/notice"
+                    android:text="@string/blood_donner"
                     android:textColor="@android:color/black"
                     android:textSize="20sp" />
 
@@ -139,14 +140,14 @@
 
 
         <androidx.cardview.widget.CardView
+            android:onClick="people"
             android:id="@+id/pepoleID"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="10dp"
-            android:background="@color/colorAccent"
-            android:elevation="8dp"
+            app:cardElevation="5dp"
             android:foreground="?android:attr/selectableItemBackground"
             app:cardBackgroundColor="@color/colorCard2"
 
@@ -192,11 +193,12 @@
 
 
         <androidx.cardview.widget.CardView
+            android:onClick="user"
             android:id="@+id/user"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
-            android:elevation="12dp"
+            app:cardElevation="5dp"
             android:foreground="?android:selectableItemBackgroundBorderless"
             app:cardBackgroundColor="@color/colorCard4"
             app:cardCornerRadius="8dp">
@@ -213,7 +215,7 @@
                     android:layout_centerInParent="true"
                     android:orientation="vertical">
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/user_image"
                         android:layout_width="80dp"
                         android:layout_height="80dp"

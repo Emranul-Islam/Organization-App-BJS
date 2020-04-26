@@ -45,13 +45,13 @@ public class PeopleAdapter extends RecyclerView.Adapter<PeopleAdapter.ViewHolder
         requestOptions.placeholder(R.drawable.ic_launcher_background);
         Glide.with(context)
                 .setDefaultRequestOptions(requestOptions)
-                .load(modelLit.get(position).getPhoto())
+                .load(modelLit.get(position).getUrl())
                 .into(holder.photo);
         holder.names.setText(modelLit.get(position).getName());
         holder.callBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, "This is number: "+modelLit.get(position).getPhone(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "This is number: "+modelLit.get(position).getNumber(), Toast.LENGTH_SHORT).show();
             }
         });
 

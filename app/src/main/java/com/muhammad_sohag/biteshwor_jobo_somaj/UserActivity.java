@@ -1,6 +1,5 @@
 package com.muhammad_sohag.biteshwor_jobo_somaj;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,18 +21,19 @@ import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QuerySnapshot;
-import com.google.protobuf.StringValue;
 
+import java.sql.Ref;
 import java.util.Objects;
 
 public class UserActivity extends AppCompatActivity {
      Toolbar toolbar;
 
-   // private FirebaseUser user =  FirebaseAuth.getInstance().getCurrentUser();
-//    private final String UID = Objects.requireNonNull(user).getUid();
-//    private FirebaseFirestore database = FirebaseFirestore.getInstance();
-//    private DocumentReference dataRef = database.collection("users").document(UID);
-//    private CollectionReference Ref = database.collection("users");
+    private FirebaseAuth auth = FirebaseAuth.getInstance();
+    private FirebaseUser user = auth.getCurrentUser();
+    private final String UID = Objects.requireNonNull(user).getUid();
+    private FirebaseFirestore firebase = FirebaseFirestore.getInstance();
+    private DocumentReference dataRef = firebase.collection("Sodesso_List").document(UID);
+    private CollectionReference chadaRef = firebase.collection("Sodesso_List").document(UID).collection("Chada_2020");
 
     private ImageView profileImage;
     private TextView profileName, chadaDeya, chadaBaki;
@@ -50,50 +50,50 @@ public class UserActivity extends AppCompatActivity {
         chadaBaki = findViewById(R.id.chada_baki);
         details = findViewById(R.id.profile_details_btn);
         edit = findViewById(R.id.profile_edit_btn);
-        //loadData();
+        loadData();
         details.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(UserActivity.this, ChadaActivity.class);
-                startActivity(i);
+               auth.signOut();
+               finish();
             }
         });
 
     }
 
-//    private void loadData() {
-//        dataRef.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
-//            @Override
-//            public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException e) {
-//                if (documentSnapshot.exists()){
-//                    Glide.with(UserActivity.this)
-//                            .load(documentSnapshot.getString("pImage"))
-//                            .into(profileImage);
-//                    profileName.setText(documentSnapshot.getString("pName"));
-//
-//                    Ref.addSnapshotListener(UserActivity.this, new EventListener<QuerySnapshot>() {
-//                        @Override
-//                        public void onEvent(@Nullable QuerySnapshot queryDocumentSnapshots, @Nullable FirebaseFirestoreException e) {
-//
-//                            try {
-//                                int deya = queryDocumentSnapshots.size();
-//                                int baki = deya-12;
-//                                chadaDeya.setText(deya+"");
-//                                chadaBaki.setText(baki+"");
-//                            }catch (Exception exception){
-//                                Toast.makeText(UserActivity.this, exception.getMessage(), Toast.LENGTH_SHORT).show();
-//                            }
-//                        }
-//                    });
-//
-//
-//
-//                }else{
-//                    Toast.makeText(UserActivity.this, "Wrong", Toast.LENGTH_SHORT).show();
-//                }
-//            }
-//        });
-//    }
+    private void loadData() {
+        dataRef.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
+            @Override
+            public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException e) {
+                if (documentSnapshot.exists()){
+                    Glide.with(UserActivity.this)
+                            .load(documentSnapshot.getString("url"))
+                            .into(profileImage);
+                    profileName.setText(documentSnapshot.getString("name"));
+
+                }else{
+                    Toast.makeText(UserActivity.this, "Wrong", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+        //chada count
+        chadaRef.addSnapshotListener(UserActivity.this, new EventListener<QuerySnapshot>() {
+            @Override
+            public void onEvent(@Nullable QuerySnapshot queryDocumentSnapshots, @Nullable FirebaseFirestoreException e) {
+
+                try {
+                    int deya = queryDocumentSnapshots.size();
+                    int baki =12- deya;
+                    chadaDeya.setText(deya+"");
+                    chadaBaki.setText(baki+"");
+                }catch (Exception exception){
+                    Toast.makeText(UserActivity.this, exception.getMessage(), Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+    }
 
 
 }

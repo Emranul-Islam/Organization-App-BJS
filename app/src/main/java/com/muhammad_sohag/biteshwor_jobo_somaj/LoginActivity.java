@@ -1,29 +1,28 @@
 package com.muhammad_sohag.biteshwor_jobo_somaj;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.ContactsContract;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.muhammad_sohag.biteshwor_jobo_somaj.custom.LoadingDialog;
 
 public class LoginActivity extends AppCompatActivity {
 
     private EditText logEmail, logPass;
     private Button logBtn;
     private FirebaseAuth auth = FirebaseAuth.getInstance();
+    private LoadingDialog ld;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,19 +33,25 @@ public class LoginActivity extends AppCompatActivity {
         logPass = findViewById(R.id.login_pass);
         logBtn = findViewById(R.id.login_btn);
 
-        final String email = logEmail.getText().toString();
-        final String password = logPass.getText().toString();
+        ld = new LoadingDialog(this);
+
+
 
         logBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!email.isEmpty()){
+
+                String email = logEmail.getText().toString();
+                String password = logPass.getText().toString();
+
+                if (!email.isEmpty()) {
                     if (!password.isEmpty()) {
-                        doLogWork(email,password);
-                    }else {
+                        ld.showLoadingDialog();
+                        doLogWork(email, password);
+                    } else {
                         logPass.setError("পাসওয়ার্ড ঠিক ভাবে দিন!");
                     }
-                }else {
+                } else {
                     logEmail.setError("ইমেইল দিন আগে !");
                 }
             }
@@ -54,23 +59,28 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void doLogWork(String email, String pass) {
-        auth.signInWithEmailAndPassword(email, pass)
+        String fEmail = email+"@bijos.com";
+        auth.signInWithEmailAndPassword(fEmail.toLowerCase(), pass)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()){
-                            Intent intent = new Intent(LoginActivity.this,UserActivity.class);
+                        if (task.isSuccessful()) {
+                            Toast.makeText(LoginActivity.this, "Login success!!", Toast.LENGTH_SHORT).show();
+                            ld.dismissLoadingDialog();
+                            Intent intent = new Intent(LoginActivity.this, UserActivity.class);
                             startActivity(intent);
                             finish();
-                        }else {
-                            Toast.makeText(LoginActivity.this, "Error Login:"+task.getException(), Toast.LENGTH_SHORT).show();
+                        } else {
+                            ld.dismissLoadingDialog();
+                            Toast.makeText(LoginActivity.this, "Error Login:" + task.getException(), Toast.LENGTH_SHORT).show();
                         }
                     }
                 })
                 .addOnFailureListener(this, new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(LoginActivity.this, "Error: "+e.getMessage(), Toast.LENGTH_SHORT).show();
+                        ld.dismissLoadingDialog();
+                        Toast.makeText(LoginActivity.this, "Error: " + e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });
     }

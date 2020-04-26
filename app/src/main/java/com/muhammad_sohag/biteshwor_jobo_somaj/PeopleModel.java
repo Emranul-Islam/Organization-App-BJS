@@ -1,24 +1,15 @@
 package com.muhammad_sohag.biteshwor_jobo_somaj;
 
 public class PeopleModel {
-    private String photo;
-    private String name;
-    private String phone;
-    private String userId;
+        private String name;
+        private String number;
+        private String number2;
+        private String blood;
+        private String url;
+        private String uid;
 
-    public PeopleModel(String photo, String name, String phone, String userId) {
-        this.photo = photo;
-        this.name = name;
-        this.phone = phone;
-        this.userId = userId;
-    }
 
-    public String getPhoto() {
-        return photo;
-    }
-
-    public void setPhoto(String photo) {
-        this.photo = photo;
+    public PeopleModel() {
     }
 
     public String getName() {
@@ -29,19 +20,54 @@ public class PeopleModel {
         this.name = name;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getNumber() {
+        return number;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setNumber(String number) {
+        this.number = number;
     }
 
-    public String getUserId() {
-        return userId;
+    public String getNumber2() {
+        return number2;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
+    public void setNumber2(String number2) {
+        this.number2 = number2;
+    }
+
+    public String getBlood() {
+        return blood;
+    }
+
+    public void setBlood(String blood) {
+        this.blood = blood;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public String getUid() {
+        return uid;
+    }
+
+    public void setUid(String uid) {
+        this.uid = uid;
+    }
+
+    public PeopleModel(String name, String number, String number2, String blood, String url, String uid) {
+        this.name = name;
+        this.number = number;
+        this.number2 = number2;
+        this.blood = blood;
+        this.url = url;
+        this.uid = uid;
+
+
     }
 }

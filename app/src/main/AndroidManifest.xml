@@ -14,10 +14,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity" />
         <activity android:name=".ChadaActivity" />
-        <activity android:name=".People" />
-        <activity android:name=".Admin" />
+        <activity
+            android:name=".People"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".About"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".NoticeActivity"
             android:parentActivityName=".MainActivity" />
