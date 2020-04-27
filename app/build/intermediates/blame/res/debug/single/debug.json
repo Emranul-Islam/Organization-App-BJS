@@ -32,6 +32,10 @@
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable\\color_item_card.xml"
     },
     {
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_profile_ic.png.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-xxhdpi\\profile_ic.png"
+    },
+    {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\font_hacked.ttf.flat",
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\font\\hacked.ttf"
     },
@@ -48,16 +52,16 @@
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-hdpi\\about_icon.png"
     },
     {
-        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_right_to_left.xml.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\anim\\slide_right_to_left.xml"
     },
     {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tt3.png.flat",
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable\\tt3.png"
     },
     {
-        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_right_to_left.xml.flat",
-        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\anim\\slide_right_to_left.xml"
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_blood_ic.png.flat",
@@ -70,6 +74,10 @@
     {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_pepole_icon.png.flat",
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-xhdpi\\pepole_icon.png"
+    },
+    {
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_profile_ic.png.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-xhdpi\\profile_ic.png"
     },
     {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_color_btn_details.xml.flat",
@@ -94,6 +102,10 @@
     {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_profile_ic.png.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-hdpi\\profile_ic.png"
     },
     {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_blood_ic.png.flat",
@@ -176,6 +188,10 @@
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-anydpi\\call_icon.xml"
     },
     {
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_profile_ic.png.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-mdpi\\profile_ic.png"
+    },
+    {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_notice_icon.png.flat",
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-mdpi\\notice_icon.png"
     },
@@ -238,6 +254,10 @@
     {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_search_black_24dp.xml.flat",
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable\\ic_search_black_24dp.xml"
+    },
+    {
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_profile_ic.xml.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-anydpi\\profile_ic.xml"
     },
     {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",

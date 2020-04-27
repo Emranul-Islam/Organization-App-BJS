@@ -20,6 +20,7 @@
     <string name="blood_donner">রক্তদাতা</string>
     <string name="enter_user_name">ইউজার নাম দিন</string>
     <string name="enter_pass">পাসওয়ার্ড দিন</string>
+    <string name="dummy_text">dummy text for check</string>
 
     <string-array name="peoplesName">
         <item>মোহাম্মাদ সোহাগ</item>

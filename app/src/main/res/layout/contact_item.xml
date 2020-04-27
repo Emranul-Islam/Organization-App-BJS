@@ -23,22 +23,43 @@
             android:id="@+id/people_image_view"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:src="@drawable/ic_launcher_background"
+            android:src="@drawable/profile_ic"
             android:layout_margin="5dp"
             android:layout_centerVertical="true"
             />
 
-        <TextView
-            android:id="@+id/people_text_view"
-            android:layout_width="wrap_content"
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
+            android:orientation="vertical"
             android:layout_toStartOf="@+id/people_call_btn"
-            android:layout_toEndOf="@+id/people_image_view"
-            android:text="THis is The Text"
             android:layout_marginStart="10dp"
-            android:textColor="@android:color/black"
-            android:textSize="15sp" />
+            android:layout_toEndOf="@+id/people_image_view">
+
+            <TextView
+                android:id="@+id/people_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dummy_text"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/people_blood_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dummy_text"
+                android:textColor="@color/colorRed"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
 
         <ImageView
             android:id="@+id/people_call_btn"
