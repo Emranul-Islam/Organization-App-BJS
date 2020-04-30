@@ -1,11 +1,9 @@
 package com.muhammad_sohag.biteshwor_jobo_somaj.adapter;
 
-import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.core.app.ActivityCompat;
+import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -32,6 +30,7 @@ public class PeopleAdapter extends RecyclerView.Adapter<PeopleAdapter.ViewHolder
     private Activity activity;
     private List<PeopleModel> modelLit;
     private int lastPosition = 0;
+    private AlertDialog alertDialog;
 
     public PeopleAdapter(Context context, Activity activity, List<PeopleModel> modelLit) {
         this.context = context;
@@ -62,10 +61,12 @@ public class PeopleAdapter extends RecyclerView.Adapter<PeopleAdapter.ViewHolder
             @SuppressLint("MissingPermission")
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_CALL);
-                intent.setData(Uri.parse("tel:" + modelLit.get(position).getNumber()));
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                context.startActivity(intent);
+
+
+                //set Alert dialog
+                showNum(position);
+
+                call(position, modelLit.get(position).getNumber());
 
 
             }
@@ -78,12 +79,45 @@ public class PeopleAdapter extends RecyclerView.Adapter<PeopleAdapter.ViewHolder
             }
         });
 
+
         //Calling Animation
         setAnim(holder.itemView, position);
     }
 
+    private void showNum(final int position) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(activity);
+        View customLayout = LayoutInflater.from(context).inflate(R.layout.show_number_layout, null);
+        TextView num1TV = customLayout.findViewById(R.id.sn_1);
+        TextView num2TV = customLayout.findViewById(R.id.sn_2);
+
+        num1TV.setText(modelLit.get(position).getNumber());
+        num2TV.setText(modelLit.get(position).getNumber2());
+        builder.setView(customLayout);
+        alertDialog = builder.create();
+        alertDialog.show();
+
+        num1TV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                call(position,modelLit.get(position).getNumber());
+                Toast.makeText(context, "click", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+    }
+
+
+    @SuppressLint("MissingPermission")
+    private void call(int position, String number) {
+        Intent intent = new Intent(Intent.ACTION_CALL);
+        intent.setData(Uri.parse("tel:" + modelLit.get(position).getNumber()));
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        context.startActivity(intent);
+    }
+
+
     //Making Animation
-    public void setAnim(View view, int position) {
+    private void setAnim(View view, int position) {
         if (position > lastPosition) {
             ScaleAnimation animation = new ScaleAnimation(0.0f, 1.0f, 0.0f, 1.0f, Animation.RELATIVE_TO_SELF, 0.5f,
                     Animation.RELATIVE_TO_SELF, 0.5f);
