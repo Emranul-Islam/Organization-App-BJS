@@ -1,9 +1,5 @@
 [
     {
-        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_about_icon.png.flat",
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-mdpi\\about_icon.png"
     },
@@ -14,6 +10,10 @@
     {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_blood_ic.xml.flat",
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-anydpi\\blood_ic.xml"
+    },
+    {
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_search_ic.png.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-mdpi\\search_ic.png"
     },
     {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
@@ -34,6 +34,10 @@
     {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_profile_ic.png.flat",
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-xxhdpi\\profile_ic.png"
+    },
+    {
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_rounda.jpg.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_rounda.jpg"
     },
     {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\font_hacked.ttf.flat",
@@ -76,8 +80,16 @@
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-xhdpi\\pepole_icon.png"
     },
     {
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_search_ic.png.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-xxhdpi\\search_ic.png"
+    },
+    {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_profile_ic.png.flat",
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-xhdpi\\profile_ic.png"
+    },
+    {
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_rounda.jpg.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_rounda.jpg"
     },
     {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_color_btn_details.xml.flat",
@@ -92,6 +104,10 @@
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable\\tt2.png"
     },
     {
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_rounda.xml.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_rounda.xml"
+    },
+    {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\layout_chada_item.xml.flat",
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\layout\\chada_item.xml"
     },
@@ -100,20 +116,24 @@
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\anim\\slide_left_to_right.xml"
     },
     {
-        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_profile_ic.png.flat",
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-hdpi\\profile_ic.png"
+    },
+    {
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_rounda.jpg.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_rounda.jpg"
+    },
+    {
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.jpg.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.jpg"
     },
     {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_blood_ic.png.flat",
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-xxhdpi\\blood_ic.png"
     },
     {
-        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.jpg.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.jpg"
     },
     {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_people.xml.flat",
@@ -144,16 +164,8 @@
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-anydpi\\pepole_icon.xml"
     },
     {
-        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tt5.png.flat",
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable\\tt5.png"
-    },
-    {
-        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tt1.png.flat",
@@ -168,10 +180,6 @@
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\layout\\loading_dialog_layout.xml"
     },
     {
-        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_notice_icon.xml.flat",
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-anydpi\\notice_icon.xml"
     },
@@ -180,16 +188,24 @@
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable\\chada_color.xml"
     },
     {
-        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_search_ic.png.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-hdpi\\search_ic.png"
     },
     {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_blood_ic.png.flat",
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-hdpi\\blood_ic.png"
     },
     {
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_rounda.jpg.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_rounda.jpg"
+    },
+    {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_call_icon.xml.flat",
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-anydpi\\call_icon.xml"
+    },
+    {
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_spinner_style.xml.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable\\spinner_style.xml"
     },
     {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_profile_ic.png.flat",
@@ -204,12 +220,8 @@
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-xhdpi\\sohag.jpg"
     },
     {
-        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_rounda.jpg.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_rounda.jpg"
     },
     {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_about.xml.flat",
@@ -224,12 +236,24 @@
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-mdpi\\pepole_icon.png"
     },
     {
-        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_search_ic.png.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-xhdpi\\search_ic.png"
     },
     {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo.png.flat",
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable\\logo.png"
+    },
+    {
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_blood_groups.xml.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\layout\\activity_blood_groups.xml"
+    },
+    {
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\layout_blood_member_item.xml.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\layout\\blood_member_item.xml"
+    },
+    {
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.jpg.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.jpg"
     },
     {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_about_icon.png.flat",
@@ -240,8 +264,8 @@
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-hdpi\\notice_icon.png"
     },
     {
-        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\menu-v26_menu_layout.xml.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\menu-v26\\menu_layout.xml"
     },
     {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_notice_icon.png.flat",
@@ -256,12 +280,16 @@
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable\\profile_bg.xml"
     },
     {
-        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_search_black_24dp.xml.flat",
-        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable\\ic_search_black_24dp.xml"
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_blood_member.xml.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\layout\\activity_blood_member.xml"
     },
     {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_profile_ic.xml.flat",
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-anydpi\\profile_ic.xml"
+    },
+    {
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_search_ic.xml.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\drawable-anydpi\\search_ic.xml"
     },
     {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
@@ -270,6 +298,14 @@
     {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_layout.xml.flat",
         "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\menu\\menu_layout.xml"
+    },
+    {
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.jpg.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.jpg"
+    },
+    {
+        "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.jpg.flat",
+        "source": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.jpg"
     },
     {
         "merged": "E:\\WorkingPlace\\AndroidAppDevolapment\\Organization-App-BJS\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_chada.xml.flat",

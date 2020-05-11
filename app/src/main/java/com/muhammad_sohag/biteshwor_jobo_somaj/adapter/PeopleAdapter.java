@@ -30,7 +30,6 @@ public class PeopleAdapter extends RecyclerView.Adapter<PeopleAdapter.ViewHolder
     private Activity activity;
     private List<PeopleModel> modelLit;
     private int lastPosition = 0;
-    private AlertDialog alertDialog;
 
     public PeopleAdapter(Context context, Activity activity, List<PeopleModel> modelLit) {
         this.context = context;
@@ -66,16 +65,8 @@ public class PeopleAdapter extends RecyclerView.Adapter<PeopleAdapter.ViewHolder
                 //set Alert dialog
                 showNum(position);
 
-                call(position, modelLit.get(position).getNumber());
 
 
-            }
-        });
-
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(context, "Anything", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -93,14 +84,21 @@ public class PeopleAdapter extends RecyclerView.Adapter<PeopleAdapter.ViewHolder
         num1TV.setText(modelLit.get(position).getNumber());
         num2TV.setText(modelLit.get(position).getNumber2());
         builder.setView(customLayout);
-        alertDialog = builder.create();
+        AlertDialog alertDialog = builder.create();
         alertDialog.show();
 
         num1TV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                call(position,modelLit.get(position).getNumber());
-                Toast.makeText(context, "click", Toast.LENGTH_SHORT).show();
+                call(modelLit.get(position).getNumber());
+                Toast.makeText(context, "প্রথম নাম্বারে কল শুরু হচ্ছে....", Toast.LENGTH_SHORT).show();
+            }
+        });
+        num2TV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                call(modelLit.get(position).getNumber2());
+                Toast.makeText(context, "দ্বিতীয় নাম্বারে কল শুরু হচ্ছে....", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -108,9 +106,9 @@ public class PeopleAdapter extends RecyclerView.Adapter<PeopleAdapter.ViewHolder
 
 
     @SuppressLint("MissingPermission")
-    private void call(int position, String number) {
+    private void call( String number) {
         Intent intent = new Intent(Intent.ACTION_CALL);
-        intent.setData(Uri.parse("tel:" + modelLit.get(position).getNumber()));
+        intent.setData(Uri.parse("tel:" + number));
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(intent);
     }

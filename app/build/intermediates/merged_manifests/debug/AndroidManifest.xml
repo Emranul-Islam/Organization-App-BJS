@@ -25,6 +25,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.muhammad_sohag.biteshwor_jobo_somaj.blood.BloodMemberActivity" />
+        <activity android:name="com.muhammad_sohag.biteshwor_jobo_somaj.blood.BloodGroups" />
         <activity android:name="com.muhammad_sohag.biteshwor_jobo_somaj.LoginActivity" />
         <activity android:name="com.muhammad_sohag.biteshwor_jobo_somaj.ChadaActivity" />
         <activity

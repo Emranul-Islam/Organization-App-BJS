@@ -1,7 +1,6 @@
 package com.muhammad_sohag.biteshwor_jobo_somaj;
 
 import android.Manifest;
-import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -14,12 +13,12 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.cardview.widget.CardView;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.muhammad_sohag.biteshwor_jobo_somaj.blood.BloodGroups;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -67,7 +66,8 @@ public class MainActivity extends AppCompatActivity {
 
     //blood donner click listener:
     public void bloodDonner(View view) {
-
+        Intent intent = new Intent(this, BloodGroups.class);
+        startActivity(intent);
     }
 
 

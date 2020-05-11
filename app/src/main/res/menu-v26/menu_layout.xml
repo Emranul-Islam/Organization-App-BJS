@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/searchView"
+        android:tooltipText="সার্চ করুন"
+        android:icon="@drawable/search_ic"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always"
+        android:title="TODO" />
+
+</menu>

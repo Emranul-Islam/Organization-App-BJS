@@ -14,6 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".blood.BloodMemberActivity"></activity>
+        <activity android:name=".blood.BloodGroups" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".ChadaActivity" />
         <activity
