@@ -10,6 +10,8 @@ import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.ScaleAnimation;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,13 +21,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.muhammad_sohag.biteshwor_jobo_somaj.R;
 import com.muhammad_sohag.biteshwor_jobo_somaj.model.BloodModel;
-import com.muhammad_sohag.biteshwor_jobo_somaj.model.PeopleModel;
 
 import java.util.List;
 
 public class BloodAdapter extends RecyclerView.Adapter<BloodAdapter.ViewHolder> {
     private Context context;
     private List<BloodModel> bloodModels;
+    private int lastPosition = 0;
 
     public BloodAdapter(Context context, List<BloodModel> bloodModels) {
         this.context = context;
@@ -62,26 +64,49 @@ public class BloodAdapter extends RecyclerView.Adapter<BloodAdapter.ViewHolder> 
                 context.startActivity(intent);
             }
         });
-        String elaka = bloodModels.get(position).getElaka();
-        holder.elaka.setText("এলাকা: "+elaka);
-        switch (elaka){
+        String thikana = bloodModels.get(position).getThikana();
+        holder.thikana.setText("এলাকা: "+thikana);
+        switch (thikana){
             case "বিটেশ্বর":
-                holder.view.setBackgroundColor(Color.RED);
+                holder.viewDesign.setBackgroundColor(Color.RED);
                 break;
             case "মাদলা":
-                holder.view.setBackgroundColor(Color.GREEN);
+                holder.viewDesign.setBackgroundColor(Color.GREEN);
                 break;
-            case "মলয়":
-                holder.view.setBackgroundColor(Color.CYAN);
+            case "ডেকরীখোলা":
+                holder.viewDesign.setBackgroundColor(Color.CYAN);
+                break;
+            case "তিনপাড়া":
+                holder.viewDesign.setBackgroundColor(Color.MAGENTA);
                 break;
             case "বরকোটা":
-                holder.view.setBackgroundColor(Color.MAGENTA);
+                holder.viewDesign.setBackgroundColor(Color.YELLOW);
+                break;
+            case "খানেবাড়ি":
+                holder.viewDesign.setBackgroundColor(Color.BLUE);
+                break;
+            case "চিনামুড়া":
+                holder.viewDesign.setBackgroundColor(Color.GRAY);
                 break;
             default:
-                holder.view.setBackgroundColor(Color.BLACK);
+                holder.viewDesign.setBackgroundColor(Color.BLACK);
         }
 
+        setAnim(holder.itemView,position);
+
     }
+
+    //Making Animation
+    private void setAnim(View view, int position) {
+        if (position >= lastPosition) {
+            ScaleAnimation animation = new ScaleAnimation(0.0f, 1.0f, 0.0f, 1.0f, Animation.RELATIVE_TO_SELF, 0.5f,
+                    Animation.RELATIVE_TO_SELF, 0.5f);
+            animation.setDuration(700);
+            view.startAnimation(animation);
+            lastPosition = position;
+        }
+    }
+
 
     @Override
     public int getItemCount() {
@@ -90,16 +115,16 @@ public class BloodAdapter extends RecyclerView.Adapter<BloodAdapter.ViewHolder> 
 
     static class ViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView name, elaka;
+        private TextView name, thikana;
         private ImageView callBtn;
-        private View view;
+        private View viewDesign;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             name = itemView.findViewById(R.id.bm_item_name);
-            elaka = itemView.findViewById(R.id.bm_item_elaka);
+            thikana = itemView.findViewById(R.id.bm_item_thikana);
             callBtn = itemView.findViewById(R.id.bm_item_call);
-            view = itemView.findViewById(R.id.bm_item_view);
+            viewDesign = itemView.findViewById(R.id.bm_item_view);
         }
     }
 }

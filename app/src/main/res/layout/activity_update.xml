@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.muhammad_sohag.biteshwor_jobo_somaj.UpdateActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarID"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorToolbar"
+        app:title="@string/tottho_change_koron"/>
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="নাম"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:id="@+id/edit_number1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="নাম্বার ১"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:id="@+id/edit_number2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="নাম্বার ২"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tottho_change_koron"
+        android:textSize="20sp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/edit_btn" />
+
+</LinearLayout>

@@ -3,15 +3,17 @@ package com.muhammad_sohag.biteshwor_jobo_somaj.model;
 public class BloodModel {
     private String name;
     private String number;
-    private String elaka;
+    private String thikana;
+    private String blood;
 
     public BloodModel() {
     }
 
-    public BloodModel(String name, String number, String elaka) {
+    public BloodModel(String name, String number, String thikana, String blood) {
         this.name = name;
         this.number = number;
-        this.elaka = elaka;
+        this.thikana = thikana;
+        this.blood = blood;
     }
 
     public String getName() {
@@ -30,11 +32,19 @@ public class BloodModel {
         this.number = number;
     }
 
-    public String getElaka() {
-        return elaka;
+    public String getThikana() {
+        return thikana;
     }
 
-    public void setElaka(String elaka) {
-        this.elaka = elaka;
+    public void setThikana(String thikana) {
+        this.thikana = thikana;
+    }
+
+    public String getBlood() {
+        return blood;
+    }
+
+    public void setBlood(String blood) {
+        this.blood = blood;
     }
 }

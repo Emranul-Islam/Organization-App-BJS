@@ -71,7 +71,7 @@
             android:layout_centerVertical="true"
             android:padding="20dp"
 
-            android:src="@drawable/call_icon" />
+            android:src="@drawable/call_ic" />
 
     </RelativeLayout>
 

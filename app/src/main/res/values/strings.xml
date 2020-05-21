@@ -2,7 +2,7 @@
     <string name="app_name">বিটেশ্বর যুব সমাজ</string>
     <string name="notice">নোটিশ</string>
     <string name="pepole">সদস্য</string>
-    <string name="aboutUs">আমাদের সম্পর্কে বিস্তারিত..</string>
+    <string name="aboutUs">সদস্য সম্পর্কে বিস্তারিত..</string>
     <string name="title">বিটেশ্বর যুব সমাজ</string>
     <string name="title2">আমার নাম সোহাগ</string>
     <string name="slogan">ইসলামের পথে,\n অসহায় এর পাশে।</string>
@@ -21,41 +21,10 @@
     <string name="enter_user_name">ইউজার নাম দিন</string>
     <string name="enter_pass">পাসওয়ার্ড দিন</string>
     <string name="dummy_text">dummy text for check</string>
-
-    <string-array name="peoplesName">
-        <item>মোহাম্মাদ সোহাগ</item>
-        <item>Muhammad Sumon</item>
-        <item>Naeim Hossain</item>
-        <item>Naeim Hossain</item>
-        <item>Naeim Hossain</item>
-        <item>Naeim Hossain</item>
-        <item>Naeim Hossain</item>
-        <item>Naeim Hossain</item>
-        <item>Naeim Hossain</item>
-        <item>Naeim Hossain</item>
-        <item>Naeim Hossain</item>
-        <item>Lamia Akter</item>
-        <item>Sumiya Akter</item>
-
-    </string-array>
-    <string-array name="phoneNumber">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>3</item>
-        <item>3</item>
-        <item>3</item>
-        <item>3</item>
-        <item>3</item>
-        <item>3</item>
-        <item>3</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-    </string-array>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">সার্চ</string>
+    <string name="adaykari">আদায়কারীর নাম:</string>
+    <string name="chada_details">আপনার সকল চাঁদার বিবরণ</string>
+    <string name="tottho_change_koron">তথ্য পরিবর্তন করুন</string>
 
 </resources>
 

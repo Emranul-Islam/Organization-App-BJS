@@ -19,130 +19,178 @@
         android:layout_marginBottom="5dp"
         android:src="@drawable/sohag" />
 
-    <TextView
-        android:id="@+id/profile_name"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/profile_img"
+        android:layout_below="@+id/profile_img"
         android:layout_marginTop="5dp"
-        android:layout_marginBottom="94dp"
         android:background="@color/colorGray"
-        android:padding="5dp"
-        android:text="Muhammad Sohag"
-        android:textSize="25sp" />
+        android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableStart="@drawable/profile_ic"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:text="Muhammad Sohag"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/profile_number_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableStart="@drawable/call_ic"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:text="000000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/profile_number_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:drawableStart="@drawable/call_ic"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:text="000000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/profile_blood_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:drawableStart="@drawable/blood_ic"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:text="Blood Group: 0+"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@+id/profile_edit_btn"
+        android:orientation="horizontal"
+        android:weightSum="2">
 
         <LinearLayout
-            android:layout_above="@+id/profile_details_btn"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:orientation="horizontal"
-            android:weightSum="2">
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="0dp"
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
+                android:layout_margin="5dp"
+                android:id="@+id/card_chada_deya"
+                app:cardBackgroundColor="@color/colorCard"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp">
 
-                <androidx.cardview.widget.CardView
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    app:cardBackgroundColor="@color/colorCard"
-                    app:cardElevation="2dp"
-                    app:cardCornerRadius="15dp"
-                    android:layout_margin="5dp">
+                    android:layout_height="match_parent">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_margin="15dp"
+                        android:text="চাঁদা দেয়া: "
+                        android:textSize="18sp" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:layout_margin="15dp"
-                            android:text="cada deya ache: "
-                            android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/chada_deya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text=""
+                        android:textSize="50sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
 
-                        <TextView
-                            android:id="@+id/chada_deya"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerInParent="true"
-                            android:text="10"
-                            android:textSize="50sp" />
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:backgroundTint="@color/colorAccent"
-                    app:cardElevation="2dp"
-                    app:cardCornerRadius="15dp"
-                    android:layout_margin="15dp">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:layout_margin="15dp"
-                            android:text="cada baki ache: "
-                            android:textSize="18sp" />
-
-                        <TextView
-                            android:id="@+id/chada_baki"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerInParent="true"
-                            android:text="2"
-                            android:textSize="50sp" />
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-            </LinearLayout>
 
         </LinearLayout>
 
-    <Button
-        android:id="@+id/profile_details_btn"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_above="@+id/profile_edit_btn"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/color_btn_details"
-        android:text="Details About Chada >"
-        android:textAllCaps="false"
-        android:textSize="25sp" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:backgroundTint="@color/colorAccent"
+                android:id="@+id/card_chada_baki"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_margin="15dp"
+                        android:text="চাঁদা বাকি: "
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/chada_baki"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text=""
+                        android:textSize="50sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
 
     <Button
-        android:id="@+id/profile_edit_btn"
+        android:id="@+id/profile_logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:drawableRight="@drawable/about_icon"
+        android:drawablePadding="5dp"
+        android:padding="10dp"
+        android:text="লগ আউট"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/profile_edit_btn"
+        android:onClick="edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginBottom="5dp"
         android:drawableRight="@drawable/pepole_icon"
         android:drawablePadding="5dp"
         android:padding="5dp"
-        android:text="Edit"
+        android:text="এডিট"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:textAllCaps="false" />
-
-
 
 
 </RelativeLayout>

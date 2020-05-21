@@ -1,6 +1,7 @@
 package com.muhammad_sohag.biteshwor_jobo_somaj.blood;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,12 +9,18 @@ import android.view.View;
 
 import com.muhammad_sohag.biteshwor_jobo_somaj.R;
 
+import java.util.Objects;
+
 public class BloodGroups extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blood_groups);
+
+        Toolbar toolbar = findViewById(R.id.bg_toolbar);
+        setSupportActionBar(toolbar);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
     }
 
     public void a_pos(View view) {

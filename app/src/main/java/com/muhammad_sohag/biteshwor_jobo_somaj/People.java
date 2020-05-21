@@ -26,6 +26,7 @@ import com.muhammad_sohag.biteshwor_jobo_somaj.model.PeopleModel;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class People extends AppCompatActivity {
 
@@ -43,6 +44,7 @@ public class People extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.people_toolBar);
         ld = new LoadingDialog(this);
         setSupportActionBar(toolbar);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         setTitle("People");
 
 
