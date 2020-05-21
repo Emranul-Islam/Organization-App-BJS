@@ -3,6 +3,7 @@ package com.muhammad_sohag.biteshwor_jobo_somaj;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.view.View;
@@ -23,10 +24,11 @@ import com.muhammad_sohag.biteshwor_jobo_somaj.custom.LoadingDialog;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class UpdateActivity extends AppCompatActivity {
 
-    private EditText name,number1,number2;
+    private EditText name, number1, number2;
     private Button btn;
     private FirebaseFirestore refDatabase = FirebaseFirestore.getInstance();
     private DocumentReference dataBase;
@@ -35,6 +37,10 @@ public class UpdateActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update);
+
+        Toolbar toolbar = findViewById(R.id.toolbarID);
+        setSupportActionBar(toolbar);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         final String uid = getIntent().getStringExtra("uid");
         dataBase = refDatabase.collection("Sodesso_List").document(uid);
@@ -51,7 +57,7 @@ public class UpdateActivity extends AppCompatActivity {
         dataBase.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException e) {
-                if (documentSnapshot != null){
+                if (documentSnapshot != null) {
                     name.setText(documentSnapshot.getString("name"));
                     number1.setText(documentSnapshot.getString("number"));
                     number2.setText(documentSnapshot.getString("number2"));
@@ -77,11 +83,11 @@ public class UpdateActivity extends AppCompatActivity {
                 dataBase.update(value).addOnCompleteListener(UpdateActivity.this, new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
-                        if (task.isComplete()){
+                        if (task.isComplete()) {
                             btn.setClickable(true);
                             loadingDialog.dismissLoadingDialog();
                             Toast.makeText(UpdateActivity.this, "ডাটা পরিবর্তন হয়েছে !", Toast.LENGTH_LONG).show();
-                        }else {
+                        } else {
                             Toast.makeText(UpdateActivity.this, "Error: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                             loadingDialog.dismissLoadingDialog();
                             btn.setClickable(true);
@@ -90,7 +96,6 @@ public class UpdateActivity extends AppCompatActivity {
                 });
             }
         });
-
 
 
     }

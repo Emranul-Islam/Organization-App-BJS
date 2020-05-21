@@ -19,11 +19,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="নাম"
+        android:inputType="text"
         android:layout_margin="5dp"/>
 
     <EditText
         android:id="@+id/edit_number1"
         android:layout_width="match_parent"
+        android:inputType="number"
         android:layout_height="wrap_content"
         android:hint="নাম্বার ১"
         android:layout_margin="5dp"/>
@@ -31,6 +33,7 @@
     <EditText
         android:id="@+id/edit_number2"
         android:layout_width="match_parent"
+        android:inputType="number"
         android:layout_height="wrap_content"
         android:hint="নাম্বার ২"
         android:layout_margin="5dp"/>

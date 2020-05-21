@@ -180,4 +180,11 @@ public class UserActivity extends AppCompatActivity {
         intent.putExtra("uid", UID);
         startActivity(intent);
     }
+
+    public void profile_image(View view) {
+        Intent intent = new Intent(this,ProfileChangeActivity.class);
+        intent.putExtra("uid", UID);
+        startActivity(intent);
+
+    }
 }

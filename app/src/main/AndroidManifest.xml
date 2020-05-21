@@ -14,7 +14,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".UpdateActivity"></activity>
+        <activity android:name=".ProfileChangeActivity"></activity>
+        <activity
+            android:name=".UpdateActivity"
+            android:parentActivityName=".UserActivity" />
         <activity
             android:name=".blood.BloodMemberActivity"
             android:parentActivityName=".blood.BloodGroups" />
@@ -41,6 +44,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
     </application>
 
 </manifest>

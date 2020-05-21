@@ -25,7 +25,10 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.muhammad_sohag.biteshwor_jobo_somaj.UpdateActivity" />
+        <activity android:name="com.muhammad_sohag.biteshwor_jobo_somaj.ProfileChangeActivity" />
+        <activity
+            android:name="com.muhammad_sohag.biteshwor_jobo_somaj.UpdateActivity"
+            android:parentActivityName="com.muhammad_sohag.biteshwor_jobo_somaj.UserActivity" />
         <activity
             android:name="com.muhammad_sohag.biteshwor_jobo_somaj.blood.BloodMemberActivity"
             android:parentActivityName="com.muhammad_sohag.biteshwor_jobo_somaj.blood.BloodGroups" />
@@ -52,6 +55,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"
@@ -62,6 +68,9 @@
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
         </service>
 
