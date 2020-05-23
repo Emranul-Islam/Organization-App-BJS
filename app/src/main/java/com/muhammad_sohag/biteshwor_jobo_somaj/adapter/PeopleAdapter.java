@@ -70,10 +70,34 @@ public class PeopleAdapter extends RecyclerView.Adapter<PeopleAdapter.ViewHolder
             }
         });
 
+        holder.photo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fullScreenImage(position);
+            }
+        });
+
 
         //Calling Animation
         setAnim(holder.itemView, position);
     }
+
+
+    private void fullScreenImage(int position) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(activity);
+        View fullScreenView = LayoutInflater.from(context).inflate(R.layout.full_screeen_image_dialog, null);
+        ImageView imageView = fullScreenView.findViewById(R.id.fullsc_iv);
+        builder.setView(fullScreenView);
+
+        Glide.with(context)
+                .load(modelLit.get(position).getUrl())
+                .into(imageView);
+
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+
+    }
+
 
     private void showNum(final int position) {
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
@@ -130,13 +154,13 @@ public class PeopleAdapter extends RecyclerView.Adapter<PeopleAdapter.ViewHolder
         return modelLit.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    static class ViewHolder extends RecyclerView.ViewHolder {
         ImageView photo;
         TextView names, blood;
         ImageView callBtn;
 
 
-        public ViewHolder(@NonNull View itemView) {
+        ViewHolder(@NonNull View itemView) {
             super(itemView);
             photo = itemView.findViewById(R.id.people_image_view);
             names = itemView.findViewById(R.id.people_text_view);

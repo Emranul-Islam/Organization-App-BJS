@@ -187,4 +187,9 @@ public class UserActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void notice(View view) {
+        Intent intent = new Intent(this, NoticeActivity.class);
+        startActivity(intent);
+    }
 }

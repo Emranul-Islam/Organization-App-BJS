@@ -138,7 +138,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\So
 	android:theme
 		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:15:9-40
 activity#com.muhammad_sohag.biteshwor_jobo_somaj.ProfileChangeActivity
-ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:17:9-68
+ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:17:9-59
 	android:name
 		ADDED from E:\WorkingPlace\AndroidAppDevolapment\Organization-App-BJS\app\src\main\AndroidManifest.xml:17:19-56
 activity#com.muhammad_sohag.biteshwor_jobo_somaj.UpdateActivity

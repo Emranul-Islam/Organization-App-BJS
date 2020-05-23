@@ -25,6 +25,7 @@
     <string name="adaykari">আদায়কারীর নাম:</string>
     <string name="chada_details">আপনার সকল চাঁদার বিবরণ</string>
     <string name="tottho_change_koron">তথ্য পরিবর্তন করুন</string>
+    <string name="notice_loading">নোটিশ লোড হচ্ছে...</string>
 
 </resources>
 

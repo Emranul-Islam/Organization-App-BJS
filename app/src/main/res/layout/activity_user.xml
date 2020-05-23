@@ -7,6 +7,15 @@
     android:background="@drawable/profile_bg"
     tools:context=".UserActivity">
 
+    <ImageButton
+        android:onClick="notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/notice_icon"/>
+
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:onClick="profile_image"
@@ -18,7 +27,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="5dp"
-        android:src="@drawable/sohag" />
+        android:src="@drawable/profile_ic" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -171,8 +180,6 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="5dp"
-        android:drawableRight="@drawable/about_icon"
-        android:drawablePadding="5dp"
         android:padding="10dp"
         android:text="লগ আউট"
         style="@style/Widget.AppCompat.Button.Colored"
@@ -186,8 +193,6 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="5dp"
-        android:drawableRight="@drawable/pepole_icon"
-        android:drawablePadding="5dp"
         android:padding="5dp"
         android:text="এডিট"
         style="@style/Widget.AppCompat.Button.Colored"

@@ -44,7 +44,7 @@
             android:parentActivityName="com.muhammad_sohag.biteshwor_jobo_somaj.MainActivity" />
         <activity
             android:name="com.muhammad_sohag.biteshwor_jobo_somaj.NoticeActivity"
-            android:parentActivityName="com.muhammad_sohag.biteshwor_jobo_somaj.MainActivity" />
+            android:parentActivityName="com.muhammad_sohag.biteshwor_jobo_somaj.UserActivity" />
         <activity
             android:name="com.muhammad_sohag.biteshwor_jobo_somaj.UserActivity"
             android:parentActivityName="com.muhammad_sohag.biteshwor_jobo_somaj.MainActivity" />

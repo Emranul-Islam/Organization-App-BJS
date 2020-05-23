@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ProfileChangeActivity"></activity>
+        <activity android:name=".ProfileChangeActivity" />
         <activity
             android:name=".UpdateActivity"
             android:parentActivityName=".UserActivity" />
@@ -33,7 +33,7 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".NoticeActivity"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".UserActivity" />
         <activity
             android:name=".UserActivity"
             android:parentActivityName=".MainActivity" />
