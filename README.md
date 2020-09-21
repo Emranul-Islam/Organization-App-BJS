@@ -5,10 +5,18 @@ This app for a local client who has an organization, and they have 50 members. T
 ## Features
 - Show all members and their contact info
 - One click call
-- See own countibution activity
+- See own contribution activity
 - Get Admin notificatio
 - Change own all info
 - Blood Bank
+
+
+
+ ## It's also have a [Admin App](https://github.com/Emranul-Islam/Organization-App-BJS-ADMIN)
+ 
+ > Admin can change each and every thing and admin will add every one contribution.
+  
+  
 
 
 ## Third-party uses on this app:
