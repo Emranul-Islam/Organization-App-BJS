@@ -4,36 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".About"
     android:orientation="vertical"
-    >
+    tools:context="xyz.emranul.bijos.About">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/adminToolbar"
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
-        android:background="@color/colorCard2"
+        android:background="@color/colorBG"
+        app:title="@string/about_title"
         app:titleTextColor="@android:color/black">
 
     </androidx.appcompat.widget.Toolbar>
 
 
-
-
-
-
-
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:text="This app Make by Muhammad Sohag "
-        android:layout_margin="10dp"/>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="250dp"
-        android:layout_margin="10dp"/>
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/bismillah"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorBG"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/our_history"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

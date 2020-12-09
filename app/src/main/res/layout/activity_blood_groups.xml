@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.muhammad_sohag.biteshwor_jobo_somaj.blood.BloodGroups">
+    tools:context="xyz.emranul.bijos.blood.BloodGroups">
 
 
     <androidx.appcompat.widget.Toolbar

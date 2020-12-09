@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/profile_bg"
-    tools:context=".UserActivity">
+    tools:context="xyz.emranul.bijos.UserActivity">
 
     <ImageButton
         android:onClick="notice"
@@ -14,7 +14,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
         android:layout_margin="10dp"
-        android:src="@drawable/notice_icon"/>
+        android:src="@drawable/notice_icon" />
 
 
     <de.hdodenhof.circleimageview.CircleImageView

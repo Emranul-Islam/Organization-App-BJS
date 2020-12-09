@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.matrichaya.bijos"
+    package="xyz.emranul.bijos"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -9,11 +9,11 @@
         android:targetSdkVersion="29" />
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CALL_PHONE" />
-
-    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-    <!-- <uses-sdk android:minSdkVersion="14" /> -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
     <application
         android:allowBackup="true"
@@ -25,30 +25,30 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.muhammad_sohag.biteshwor_jobo_somaj.ProfileChangeActivity" />
+        <activity android:name="xyz.emranul.bijos.ProfileChangeActivity" />
         <activity
-            android:name="com.muhammad_sohag.biteshwor_jobo_somaj.UpdateActivity"
-            android:parentActivityName="com.muhammad_sohag.biteshwor_jobo_somaj.UserActivity" />
+            android:name="xyz.emranul.bijos.UpdateActivity"
+            android:parentActivityName="xyz.emranul.bijos.UserActivity" />
         <activity
-            android:name="com.muhammad_sohag.biteshwor_jobo_somaj.blood.BloodMemberActivity"
-            android:parentActivityName="com.muhammad_sohag.biteshwor_jobo_somaj.blood.BloodGroups" />
+            android:name="xyz.emranul.bijos.blood.BloodMemberActivity"
+            android:parentActivityName="xyz.emranul.bijos.blood.BloodGroups" />
         <activity
-            android:name="com.muhammad_sohag.biteshwor_jobo_somaj.blood.BloodGroups"
-            android:parentActivityName="com.muhammad_sohag.biteshwor_jobo_somaj.MainActivity" />
-        <activity android:name="com.muhammad_sohag.biteshwor_jobo_somaj.LoginActivity" />
+            android:name="xyz.emranul.bijos.blood.BloodGroups"
+            android:parentActivityName="xyz.emranul.bijos.MainActivity" />
+        <activity android:name="xyz.emranul.bijos.LoginActivity" />
         <activity
-            android:name="com.muhammad_sohag.biteshwor_jobo_somaj.People"
-            android:parentActivityName="com.muhammad_sohag.biteshwor_jobo_somaj.MainActivity" />
+            android:name="xyz.emranul.bijos.People"
+            android:parentActivityName="xyz.emranul.bijos.MainActivity" />
         <activity
-            android:name="com.muhammad_sohag.biteshwor_jobo_somaj.About"
-            android:parentActivityName="com.muhammad_sohag.biteshwor_jobo_somaj.MainActivity" />
+            android:name="xyz.emranul.bijos.About"
+            android:parentActivityName="xyz.emranul.bijos.MainActivity" />
         <activity
-            android:name="com.muhammad_sohag.biteshwor_jobo_somaj.NoticeActivity"
-            android:parentActivityName="com.muhammad_sohag.biteshwor_jobo_somaj.UserActivity" />
+            android:name="xyz.emranul.bijos.NoticeActivity"
+            android:parentActivityName="xyz.emranul.bijos.UserActivity" />
         <activity
-            android:name="com.muhammad_sohag.biteshwor_jobo_somaj.UserActivity"
-            android:parentActivityName="com.muhammad_sohag.biteshwor_jobo_somaj.MainActivity" />
-        <activity android:name="com.muhammad_sohag.biteshwor_jobo_somaj.MainActivity" >
+            android:name="xyz.emranul.bijos.UserActivity"
+            android:parentActivityName="xyz.emranul.bijos.MainActivity" />
+        <activity android:name="xyz.emranul.bijos.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -59,6 +59,15 @@
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
 
+        <service
+            android:name="xyz.emranul.bijos.notification.NotificationService"
+            android:exported="false"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECIVE" />
+            </intent-filter>
+        </service>
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"
             android:directBootAware="true"
@@ -72,6 +81,18 @@
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
         </service>
 
         <activity
@@ -81,10 +102,31 @@
             android:launchMode="singleTask"
             android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+             FirebaseMessagingService performs security checks at runtime,
+             but set to not exported to explicitly avoid allowing another app to call it.
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
 
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.matrichaya.bijos.firebaseinitprovider"
+            android:authorities="xyz.emranul.bijos.firebaseinitprovider"
             android:exported="false"
             android:initOrder="100" />
 
@@ -96,6 +138,23 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false" >
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
     </application>
 
 </manifest>

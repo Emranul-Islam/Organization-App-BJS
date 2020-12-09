@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.muhammad_sohag.biteshwor_jobo_somaj.ProfileChangeActivity">
+    tools:context="xyz.emranul.bijos.ProfileChangeActivity">
 
 
     <de.hdodenhof.circleimageview.CircleImageView

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">324838463505-l4vbdsdl854gsaepavntjirjh7eiftmo.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://biteshwor-jubo-somaj.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">324838463505</string>
+    <string name="google_api_key" translatable="false">AIzaSyCzqzRK6xBEVliaEOy8eubH854lFaTxzj4</string>
+    <string name="google_app_id" translatable="false">1:324838463505:android:e9295ac870705b443d79b0</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCzqzRK6xBEVliaEOy8eubH854lFaTxzj4</string>
+    <string name="google_storage_bucket" translatable="false">biteshwor-jubo-somaj.appspot.com</string>
+    <string name="project_id" translatable="false">biteshwor-jubo-somaj</string>
+</resources>
